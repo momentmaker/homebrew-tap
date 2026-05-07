@@ -5,21 +5,21 @@
 class Jutsu < Formula
   desc "Open skills for AI coding agents — install, list, and manage skills across Claude, Codex, and Gemini."
   homepage "https://kaijutsu.dev"
-  version "0.9.1"
+  version "0.10.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/momentmaker/kaijutsu/releases/download/v0.9.1/jutsu_0.9.1_darwin_amd64.tar.gz"
-      sha256 "f530722b6ed20c71da3158b25f0b5d5b314f4fbbce1186cc7989a490be80deab"
+      url "https://github.com/momentmaker/kaijutsu/releases/download/v0.10.0/jutsu_0.10.0_darwin_amd64.tar.gz"
+      sha256 "5ec2ea47234fa68ee737042bfe42c1ace120cb3dd96ebd716af083894630b1a1"
 
       define_method(:install) do
         bin.install "jutsu"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/momentmaker/kaijutsu/releases/download/v0.9.1/jutsu_0.9.1_darwin_arm64.tar.gz"
-      sha256 "362d73561c804b5c0e64898c544db5ff8358420e51dbc921a4a61c6a6b77e3c4"
+      url "https://github.com/momentmaker/kaijutsu/releases/download/v0.10.0/jutsu_0.10.0_darwin_arm64.tar.gz"
+      sha256 "2f85d8a58b70b8d230a7f6975ec149e61f2803466bc585e6403e42bd31b1fb8f"
 
       define_method(:install) do
         bin.install "jutsu"
@@ -29,15 +29,15 @@ class Jutsu < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/momentmaker/kaijutsu/releases/download/v0.9.1/jutsu_0.9.1_linux_amd64.tar.gz"
-      sha256 "0adb6b4aa271b1eba01441a0fbde8df07ad5d7f82232e9d399a752a4d6ba5103"
+      url "https://github.com/momentmaker/kaijutsu/releases/download/v0.10.0/jutsu_0.10.0_linux_amd64.tar.gz"
+      sha256 "e06f627e0ce17946e1c28627e4b32c7a5443176437d422985b97ca3a8ca8465b"
       define_method(:install) do
         bin.install "jutsu"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/momentmaker/kaijutsu/releases/download/v0.9.1/jutsu_0.9.1_linux_arm64.tar.gz"
-      sha256 "cd7750c35491810361ee92422e94090c858ca55f4fcccd74803ed5265355914d"
+      url "https://github.com/momentmaker/kaijutsu/releases/download/v0.10.0/jutsu_0.10.0_linux_arm64.tar.gz"
+      sha256 "84748efa36b99e79563e97f76dc577c7fabe93e94ac08d7a38266cc4c30b8a8e"
       define_method(:install) do
         bin.install "jutsu"
       end
